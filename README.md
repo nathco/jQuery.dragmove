@@ -8,24 +8,33 @@ Include the latest version of [jQuery](http://jquery.com/download) and `jQuery.d
 <script src="jQuery.dragmove.js"></script>
 ```
 ## How to Use
-Start by calling the `dragmove();` method on any DOM element. Move the element by clicking ( tapping on touch devices ) and dragging it around the viewport. The following example will enable dragging functionality for all `div` elements.
+Start by calling the `dragmove()` method on any element. Optionally add inertia by declaring a CSS `transition` on the element. The following example will enable dragging functionality for all `div` elements. See the live demo: [code.nath.co/dragmove](http://code.nath.co/dragmove)
 
+**jQuery**
 ```javascript
 $(function() {  
 
     // All div elements
     $('div').dragmove(); 
-	
+
 });
 ```
 
-**Live Demo:** [code.nath.co/dragmove](http://code.nath.co/dragmove)
+**CSS ( Optional )**
+```css
+div {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}  
+```  
 
 ## Browser Support
 – Google Chrome  
 – Safari ( Desktop and Mobile )  
-– Internet Explorer ( 9, 10, 11 )  
+– Internet Explorer ( 8, 9, 10+ )  
 – Firefox 
 
 ## Feedback
-If you discover any issues or have questions regarding usage, please send a message to [mail@nath.co](mailto:mail@nath.co) or find me on twitter [@NathanRutzky](http://twitter.com/NathanRutzky).
+If you discover any issues or have questions regarding usage, please send a message to [code@nath.co](mailto:code@nath.co) or find me on GitHub [@nathco](https://github.com/nathco).

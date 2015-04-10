@@ -1,6 +1,7 @@
-// Draggable functionality for DOM elements
-// Source: github.com/NathanRutzky/jQuery.dragmove
-// Version: 1.0
+// Plugin: jQuery.dragmove
+// Source: github.com/nathco/jQuery.dragmove
+// Author: Nathan Rutzky
+// Update: 1.0
 
 (function($) {
 
@@ -57,7 +58,7 @@
                 
                 active = false;
                 
-            });		
+            });
                                 
         });
             
